@@ -1,0 +1,88 @@
+<mxfile host="app.diagrams.net" modified="2025-11-19T12:00:00Z" agent="GPT-5.1" version="22.0.0">
+  <diagram id="parking-system-uml" name="Page-1">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ParkingSystemManager -->
+        <mxCell id="2" value="&lt;&lt;Singleton&gt;&gt;&#xa;ParkingSystemManager&#xa;---&#xa;- instance : ParkingSystemManager&#xa;- parkingLots : List&lt;ParkingLot&gt;&#xa;- services : Services&#xa;---&#xa;+ getInstance() : ParkingSystemManager&#xa;+ registerParkingLot(lot : ParkingLot) : void&#xa;+ getParkingLot(id : String) : ParkingLot&#xa;+ processEntry(v : Vehicle, gateId : String) : Ticket&#xa;+ processExit(plate : String, gateId : String) : boolean&#xa;+ calculatePayment(t : Ticket) : int" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="60" width="320" height="260" as="geometry"/>
+        </mxCell>
+
+        <!-- ParkingLot -->
+        <mxCell id="3" value="ParkingLot&#xa;---&#xa;- lotId : String&#xa;- floors : List&lt;Floor&gt;&#xa;- activeTickets : Map&lt;String, Ticket&gt;&#xa;- ticketHistory : List&lt;Ticket&gt;&#xa;---&#xa;+ isFull() : boolean&#xa;+ findSpot(type : VehicleType) : ParkingSpot&#xa;+ assignSpot(v : Vehicle) : ParkingSpot&#xa;+ freeSpotByNumber(n : int) : void&#xa;+ addActiveTicket(t : Ticket) : void&#xa;+ getActiveTicket(plate : String) : Ticket&#xa;+ addToHistory(t : Ticket) : void&#xa;+ getSpotCollection() : ParkingSpotCollection" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="60" width="320" height="290" as="geometry"/>
+        </mxCell>
+
+        <!-- Services -->
+        <mxCell id="4" value="Services&#xa;---&#xa;+ getPaymentService() : PaymentService&#xa;+ getViolationService() : Violation&#xa;+ getTicketService() : TicketService" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="360" width="260" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- PaymentProcessor (interface) -->
+        <mxCell id="5" value="&lt;&lt;interface&gt;&gt;&#xa;PaymentProcessor&#xa;---&#xa;+ pay(amount : int) : boolean&#xa;+ cancel(id : String) : boolean&#xa;+ status(id : String) : PaymentStatus" style="swimlane;fontStyle=2;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="280" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- PaymentAPI_Adapter -->
+        <mxCell id="6" value="PaymentAPI_Adapter&#xa;---&#xa;- externalAPI : ExternalPaymentAPI&#xa;---&#xa;+ pay(amount : int) : boolean&#xa;+ cancel(id : String) : boolean&#xa;+ status(id : String) : PaymentStatus" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="400" width="300" height="170" as="geometry"/>
+        </mxCell>
+
+        <!-- ParkingSpotCollection -->
+        <mxCell id="7" value="ParkingSpotCollection&#xa;---&#xa;- spots : List&lt;ParkingSpot&gt;&#xa;---&#xa;+ addSpot(s : ParkingSpot) : void&#xa;+ iterator() : ParkingSpotIterator" style="swimlane;fontStyle=0;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="380" width="280" height="150" as="geometry"/>
+        </mxCell>
+
+        <!-- ParkingSpotIterator (interface) -->
+        <mxCell id="8" value="&lt;&lt;interface&gt;&gt;&#xa;ParkingSpotIterator&#xa;---&#xa;+ hasNext() : boolean&#xa;+ next() : ParkingSpot" style="swimlane;fontStyle=2;align=left;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;rounded=0;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="800" y="360" width="230" height="130" as="geometry"/>
+        </mxCell>
+
+        <!-- Association: ParkingSystemManager - ParkingLot (manages many) -->
+        <mxCell id="10" style="endArrow=block;endFill=0;dashed=0;strokeWidth=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Association: ParkingSystemManager uses Services -->
+        <mxCell id="11" style="endArrow=open;endFill=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="2" target="4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Association: ParkingSystemManager uses PaymentProcessor -->
+        <mxCell id="12" style="endArrow=open;endFill=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Realization: PaymentAPI_Adapter implements PaymentProcessor -->
+        <mxCell id="13" style="endArrow=block;endFill=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="6" target="5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Association: ParkingLot has ParkingSpotCollection -->
+        <mxCell id="14" style="endArrow=open;endFill=0;dashed=0;strokeWidth=1;" edge="1" parent="1" source="3" target="7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- Association: ParkingSpotCollection creates ParkingSpotIterator -->
+        <mxCell id="15" style="endArrow=open;endFill=0;dashed=1;strokeWidth=1;" edge="1" parent="1" source="7" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="0" y="0" as="offset"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

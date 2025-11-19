@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import customers.MonthlySub;
 import parking.ParkingLot;
+import parking.spots.ParkingSpot;
+import services.Allocation;
 import services.Services;
 
 public class ParkingSystemManager {
@@ -37,6 +40,17 @@ public class ParkingSystemManager {
     public void setServices(Services services) {
         this.services = services;
     }
+
+    public ParkingSpot allocateSpot(String subId, String lotId) {
+
+    MonthlySub sub = customers.get(subId);
+    ParkingLot lot = getParkingLot(lotId);
+
+    Allocation allocationService = services.getAllocationService();
+
+    return allocationService.allocate(sub, lot);
+}
+
 
     
 }
