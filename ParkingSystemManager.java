@@ -78,17 +78,11 @@ public class ParkingSystemManager {
         return gate.open(vehicle, lot);
     }
 
-    public boolean processExit(Gate gate,
-                               ParkingLot lot,
-                               String plate,
-                               PaymentProcessor processor) {
-        if (gate == null || lot == null || plate == null || processor == null) {
-            return false;
-        }
-        if (services == null || services.getPayment() == null) {
-            return false;
-        }
-        return gate.exit(plate, lot, processor, services.getPayment());
+    public boolean processExit(Gate gate, ParkingLot lot, String plate, PaymentProcessor processor) {
+    if (gate == null || lot == null || plate == null || processor == null) {
+        return false;
+    }
+    return gate.exit(plate, lot, processor);
     }
 
     public int calculatePayment(Ticket ticket) {

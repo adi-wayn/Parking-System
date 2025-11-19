@@ -8,7 +8,7 @@ import parking.spots.ParkingSpot;
 import sensors.Camera;
 import sensors.Sensor;
 import services.payment.PaymentProcessor;
-import services.payment.PaymentService;
+import services.payment.*;
 import tickets.Ticket;
 import vehicles.Vehicle;
 
@@ -51,24 +51,22 @@ public class Gate {
     /**
      * Process exit for a vehicle: charge, pay and free the spot.
      */
-    public boolean exit(String plate, ParkingLot lot, PaymentProcessor processor, PaymentService paymentService) {
-        Ticket t = lot.getActiveTicket(plate);
-        if (t == null) {
-            return false;
-        }
-        int amount = paymentService.calculate(t);
-        if (!processor.pay(amount)) {
-            return false;
-        }
+    public boolean exit(String plate, ParkingLot lot, PaymentProcessor processor) {
 
-        // mark ticket as paid and move to history
-        t.setPaid();
-        if (t.getAssignedSpotNumber() != null) {
-            lot.freeSpotByNumber(t.getAssignedSpotNumber());
-        }
-        lot.addToHistory(t);
-        return true;
-    }
+    Ticket t = lot.getActiveTicket(plate);
+    if (t == null) return false;
+
+    int price = t.getTotalAmount();
+
+    boolean paid = processor.pay(price);
+    if (!paid) return false;
+
+    lot.freeSpot(t.getSpotNumber());
+    lot.moveToHistory(t);
+
+    return true;
+}
+
 
     public boolean closeSafely() {
         // In a real system we might retry a few times
