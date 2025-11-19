@@ -11,32 +11,23 @@ import vehicles.VehicleType;
 
 public class Floor {
     private final int floorNum;
-    final List<ParkingSpot> spots = new ArrayList<>();
+    private ParkingSpotCollection spotCollection = new ParkingSpotCollection();
 
     public Floor(int floorNum) {
         this.floorNum = floorNum;
     }
 
-    public void addSpot(ParkingSpot s) { spots.add(s); }
+    public void addSpot(ParkingSpot s) { spotCollection.addSpot(s); }
 
     public boolean isFull() {
-        return spots.stream().allMatch(s -> s.getParkingStatus() == ParkingStatus.TAKEN);
+        return spotCollection.stream().allMatch(s -> s.getParkingStatus() == ParkingStatus.TAKEN);
     }
 
-    public List<ParkingSpot> getSpots() {
-        return spots;
+    public ParkingSpotCollection getSpots() {
+        return spotCollection;
     }
 
     public ParkingSpot findSpot(VehicleType type) {
-        return spots.stream().filter(s -> s.getParkingStatus() == ParkingStatus.FREE && s.canFit(new SimpleVehicle(type))).findFirst().orElse(null);
+        return spotCollection.stream().filter(s -> s.getParkingStatus() == ParkingStatus.FREE && s.canFit(new SimpleVehicle(type))).findFirst().orElse(null);
     }
-
-    public ParkingSpotIterator iterator() {
-        return new ParkingSpotIteratorImpl(spots);
-    }
-}
-
-// small helper vehicle used for matching only
-class SimpleVehicle extends Vehicle {
-    public SimpleVehicle(VehicleType t) { super("-", t); }
 }

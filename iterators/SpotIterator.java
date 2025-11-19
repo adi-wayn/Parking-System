@@ -4,11 +4,11 @@ import java.util.NoSuchElementException;
 
 import parking.spots.ParkingSpot;
 
-public class ParkingSpotIteratorImpl implements ParkingSpotIterator {
+public class SpotIterator implements ParkingSpotIterator {
     private final List<ParkingSpot> spots;
     private int idx = 0;
 
-    public ParkingSpotIteratorImpl(List<ParkingSpot> spots) {
+    public SpotIterator(List<ParkingSpot> spots) {
         this.spots = spots;
     }
 

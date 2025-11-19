@@ -1,6 +1,9 @@
 package parking;
 import java.util.ArrayList;
 import java.util.List;
+
+import iterators.ParkingSpotIterator;
+import iterators.ParkingSpotIteratorImpl;
 import parking.spots.ParkingSpot;
 import tickets.Ticket;
 import tickets.TicketStatus;
@@ -53,7 +56,7 @@ public class ParkingLot {
 
 	public void freeSpotByNumber(int spotNumber) {
 		for (Floor f : floors) {
-			for (ParkingSpot s : f.spots) {
+			for (ParkingSpot s : f.getSpots()) {
 				if (s.getSpotNumber() == spotNumber) {
 					s.freeSpot();
 					return;
@@ -61,4 +64,16 @@ public class ParkingLot {
 			}
 		}
 	}
+
+	public ParkingSpotIterator iteratorAll() {
+    List<ParkingSpot> all = new ArrayList<>();
+    for (Floor f : floors) {
+        ParkingSpotIterator it = f.getSpots().iterator();
+        while (it.hasNext()) {
+            all.add(it.next());
+        }
+    }
+    return new ParkingSpotIteratorImpl(all);
+}
+
 }
