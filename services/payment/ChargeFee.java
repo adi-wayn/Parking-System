@@ -1,14 +1,14 @@
 package services.payment;
 
-public class Charge {
-    private final ChargeType type;
+public class ChargeFee {
+    private final ChargeFeeType type;
     private final int amount; // in cents or smallest currency unit
 
-    public Charge(ChargeType type, int amount) {
+    public ChargeFee(ChargeFeeType type, int amount) {
         this.type = type;
         this.amount = amount;
     }
 
-    public ChargeType getType() { return type; }
+    public ChargeFeeType getType() { return type; }
     public int getAmount() { return amount; }
 }

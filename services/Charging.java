@@ -7,7 +7,7 @@ public class Charging {
     private int currentChargeTime = 0;
     private boolean charging = false;
 
-    public Charging(int price, int chargeTime) {
+    public ChargingFee(int price, int chargeTime) {
         this.price = price;
         this.chargeTime = chargeTime;
     }

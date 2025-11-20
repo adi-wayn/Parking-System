@@ -1,27 +1,31 @@
 package services;
 
-import services.payment.PaymentService;
+import gates.Security;
+import services.payment.PaymentProcessor;
 
 public class Services {
-    private final PaymentService payment;
+    private final PaymentProcessor payment;
     private final Allocation allocation;
     private final Charging charging;
     private final Towing towing;
     private final Violation violation;
+    private final Security security;
 
-    public Services(PaymentService payment,
+    public Services(PaymentProcessor payment,
                     Allocation allocation,
                     Charging charging,
                     Towing towing,
-                    Violation violation) {
+                    Violation violation,
+                    Security security) {
         this.payment = payment;
         this.allocation = allocation;
         this.charging = charging;
         this.towing = towing;
         this.violation = violation;
+        this.security = security;
     }
 
-    public PaymentService getPayment() {
+    public PaymentProcessor getPayment() {
         return payment;
     }
 
@@ -29,7 +33,7 @@ public class Services {
         return allocation;
     }
 
-    public Charging getCharging() {
+    public Charging getChargingFee() {
         return charging;
     }
 
@@ -39,5 +43,9 @@ public class Services {
 
     public Violation getViolation() {
         return violation;
+    }
+
+    public Security getSecurity() {
+        return security;
     }
 }

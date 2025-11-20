@@ -1,5 +1,5 @@
 package services.payment;
-public enum ChargeType {
+public enum ChargeFeeType {
     TOWING,
     PENALTY,
     CHARGING,
