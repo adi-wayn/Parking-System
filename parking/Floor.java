@@ -2,8 +2,7 @@ package parking;
 import java.util.ArrayList;
 import java.util.List;
 
-import iterators.ParkingSpotIterator;
-import iterators.ParkingSpotIteratorImpl;
+import iterators.*;
 import parking.spots.ParkingSpot;
 import parking.spots.ParkingStatus;
 import vehicles.Vehicle;
@@ -17,13 +16,15 @@ public class Floor {
         this.floorNum = floorNum;
     }
 
+    public int getFloorNumber() { return floorNum; }
+
     public void addSpot(ParkingSpot s) { spotCollection.addSpot(s); }
 
     public boolean isFull() {
         return spotCollection.stream().allMatch(s -> s.getParkingStatus() == ParkingStatus.TAKEN);
     }
 
-    public ParkingSpotCollection getSpots() {
+    public ParkingSpotCollection getSpotCollection() {
         return spotCollection;
     }
 
