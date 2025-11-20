@@ -9,19 +9,22 @@ public class Services {
     private final Towing towing;
     private final Violation violation;
     private final Security security;
+    private final WaitingListService waitingList;
 
     public Services(PaymentProcessor payment,
                     Allocation allocation,
                     Charging charging,
                     Towing towing,
                     Violation violation,
-                    Security security) {
+                    Security security,
+                    WaitingListService waitingList){
         this.payment = payment;
         this.allocation = allocation;
         this.charging = charging;
         this.towing = towing;
         this.violation = violation;
         this.security = security;
+        this.waitingList = waitingList;
     }
 
     public PaymentProcessor getPayment() {
@@ -46,5 +49,9 @@ public class Services {
 
     public Security getSecurity() {
         return security;
+    }
+
+    public WaitingListService getWaitingList() {
+        return waitingList;
     }
 }

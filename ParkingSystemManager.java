@@ -111,7 +111,7 @@ public class ParkingSystemManager {
         boolean paid = svc.getPayment().pay(amount);
 
         if (!paid) {
-            svc.getSecurity().blacklist(t.getPlate());
+            svc.getSecurity().insertBlacklist(t.getPlate());
             return false;
         }
 
