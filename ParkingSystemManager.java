@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -71,18 +72,53 @@ public class ParkingSystemManager {
         return null;
     }
 
-    public Ticket processEntry(Gate gate, ParkingLot lot, Vehicle vehicle) {
-        if (gate == null || lot == null || vehicle == null) {
+    public Ticket processEntry(Vehicle v, String lotId, Gate gate) {
+
+        Services svc = services;
+
+        // 1) בדיקות אבטחה
+        if (!svc.getSecurity().authorizeEntry(v)) {
             return null;
         }
-        return gate.open(vehicle, lot);
+
+        ParkingLot lot = getParkingLot(lotId);
+
+        // 2) אין מקום → רשימת המתנה
+        if (!lot.hasSpace()) {
+            svc.getWaitingList().enqueue(v, lot);
+            return null;
+        }
+
+        // 3) יצירת כרטיס
+        Ticket t = new Ticket(v.getPlate(), v.getType());
+        lot.addActiveTicket(t);
+
+        // 4) הקצאה
+        svc.getAllocation().allocate(v, lot, t);
+
+        // 5) פתיחת שער
+        gate.openGate();
+
+        return t;
     }
 
-    public boolean processExit(Gate gate, ParkingLot lot, String plate, PaymentProcessor processor) {
-    if (gate == null || lot == null || plate == null || processor == null) {
-        return false;
-    }
-    return gate.exit(plate, lot, processor);
+    public boolean processExit(Ticket t, Gate gate) {
+
+        Services svc = services;
+        t.setExitTime(LocalDateTime.now());
+
+        int amount = t.totalCharges();
+        boolean paid = svc.getPayment().pay(amount);
+
+        if (!paid) {
+            svc.getSecurity().blacklist(t.getPlate());
+            return false;
+        }
+
+        t.setPaid();
+        gate.openGate();
+
+        return true;
     }
 
     public int calculatePayment(Ticket ticket) {

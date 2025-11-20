@@ -1,6 +1,5 @@
 package services;
 
-import gates.Security;
 import services.payment.PaymentProcessor;
 
 public class Services {

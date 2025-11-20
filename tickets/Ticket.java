@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import services.payment.Charge;
+import services.payment.ChargeFee;
 import vehicles.VehicleType;
 
 public class Ticket {
@@ -13,8 +13,8 @@ public class Ticket {
     private final VehicleType type;
     private final LocalDateTime entryTime;
     private LocalDateTime exitTime;
-    private TicketStatus status;
-    private final List<Charge> additionalCharges = new ArrayList<>();
+    private TicketStatus ticketStatus;
+    private final List<ChargeFee> additionalCharges = new ArrayList<>();
     private Integer assignedSpotNumber = null;
 
     public Ticket(String plate, VehicleType type) {
@@ -22,7 +22,7 @@ public class Ticket {
         this.plate = plate;
         this.type = type;
         this.entryTime = LocalDateTime.now();
-        this.status = TicketStatus.PENDING;
+        this.ticketStatus = TicketStatus.PENDING;
     }
 
     public int getId() { return id; }
@@ -30,22 +30,22 @@ public class Ticket {
     public VehicleType getType() { return type; }
     public LocalDateTime getEntryTime() { return entryTime; }
     public LocalDateTime getExitTime() { return exitTime; }
-    public TicketStatus getStatus() { return status; }
-    public List<Charge> getAdditionalCharges() { return additionalCharges; }
+    public TicketStatus getStatus() { return ticketStatus; }
+    public List<ChargeFee> getAdditionalCharges() { return additionalCharges; }
     public Integer getAssignedSpotNumber() { return assignedSpotNumber; }
 
     public void setExitTime(LocalDateTime t) { this.exitTime = t; }
 
-    public void addCharge(Charge c) { additionalCharges.add(c); }
+    public void addCharge(ChargeFee c) { additionalCharges.add(c); }
 
     public int totalCharges() {
         int sum = 0;
-        for (Charge c : additionalCharges) sum += c.getAmount();
+        for (ChargeFee c : additionalCharges) sum += c.getAmount();
         return sum;
     }
 
     public boolean setPaid() {
-        this.status = TicketStatus.PAID;
+        this.ticketStatus = TicketStatus.PAID;
         return true;
     }
 
