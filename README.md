@@ -1,5 +1,7 @@
 # 🚗 Parking System – Java Design Patterns Project
 ### מערכת ניהול חניונים המדגימה תבניות עיצוב וארכיטקטורה רב־שכבתית
+Public view link:
+https://www.canva.com/design/DAG5UeWV4XA/LERPyMrTR5OrR4eMCuot5g/view?utm_content=DAG5UeWV4XA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h901b41d23e
 
 ---
 
