@@ -4,15 +4,15 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import DomainLayer.Entities.Customer;
-import DomainLayer.Entities.MonthlySub;
-import DomainLayer.Entities.ParkingLot;
-import DomainLayer.Entities.ParkingSpot;
-import DomainLayer.Entities.Ticket;
-import DomainLayer.Entities.Vehicle;
-import DomainLayer.Entities.Gate;
-
-import DomainLayer.Services.Services;
+import DomainLayer.*;
+import DomainLayer.DomainServices.*;
+import customers.Customer;
+import customers.MonthlySub;
+import gates.Gate;
+import parking.ParkingLot;
+import parking.spots.ParkingSpot;
+import tickets.Ticket;
+import vehicles.Vehicle;
 
 /**
  * Singleton – ParkingSystemManager

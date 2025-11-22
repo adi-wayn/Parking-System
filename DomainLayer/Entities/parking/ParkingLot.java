@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import iterators.ParkingSpotIterator;
-import iterators.ParkingSpotIteratorImpl;
+import iterators.SpotIterator;
 import parking.spots.ParkingSpot;
 import tickets.Ticket;
 import tickets.TicketStatus;
