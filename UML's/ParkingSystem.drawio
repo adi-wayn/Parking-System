@@ -1,10 +1,10 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3" pages="6">
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3" pages="7">
   <diagram name="Class" id="3aAVMgNplGD-8Dx0yTDG">
-    <mxGraphModel dx="4910" dy="4043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1332" dy="1715" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="twR8jeRI6qD78y5mzVG5-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingLot&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ lotId: String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ floors: List&amp;lt;Floor&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ activeTickets: List&amp;lt;Ticket&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ gates: List&amp;lt;Gate&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ history: List&amp;lt;Ticket&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ isFull(): bool&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ findSpot(VehicleType): int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getActiveTicket(string): Ticket&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ addActiveTicket(t : Ticket) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getPendingTickets(string): List&amp;lt;Ticket&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ registerGate(id : String, g : Gate) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ getGate(id : String) : Gate&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ addToHistory(Ticket): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+        <mxCell id="twR8jeRI6qD78y5mzVG5-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingLot&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ lotId: String&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ floors: List&amp;lt;Floor&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ activeTickets: List&amp;lt;Ticket&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ gates: List&amp;lt;Gate&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ history: List&amp;lt;Ticket&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ isFull(): bool&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ findSpot(VehicleType): int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getActiveTicket(string): Ticket&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ addActiveTicket(t : Ticket) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getPendingTickets(string): List&amp;lt;Ticket&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ registerGate(id : String, g : Gate) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;+ getGate(id : String) : Gate&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ addToHistory(Ticket): void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getFloors(): List&amp;lt;Floor&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1565" y="40" width="240" height="260" as="geometry" />
         </mxCell>
         <mxCell id="twR8jeRI6qD78y5mzVG5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="twR8jeRI6qD78y5mzVG5-72" target="twR8jeRI6qD78y5mzVG5-13" edge="1">
@@ -267,7 +267,7 @@
         <mxCell id="twR8jeRI6qD78y5mzVG5-48" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="300" y="146" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="twR8jeRI6qD78y5mzVG5-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0.002;exitY=0.272;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="twR8jeRI6qD78y5mzVG5-2" edge="1" target="twR8jeRI6qD78y5mzVG5-11">
+        <mxCell id="twR8jeRI6qD78y5mzVG5-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.09;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0.002;exitY=0.272;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="twR8jeRI6qD78y5mzVG5-2" target="twR8jeRI6qD78y5mzVG5-11" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1185" y="111" />
@@ -292,7 +292,7 @@
             <mxPoint x="1295" y="1010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="twR8jeRI6qD78y5mzVG5-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.523;entryY=0.017;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;entryPerimeter=0;exitX=0.008;exitY=0.169;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" edge="1" target="twR8jeRI6qD78y5mzVG5-114">
+        <mxCell id="twR8jeRI6qD78y5mzVG5-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.523;entryY=0.017;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;entryPerimeter=0;exitX=0.008;exitY=0.169;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" target="twR8jeRI6qD78y5mzVG5-114" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1560" y="719" />
@@ -434,7 +434,7 @@
             <mxPoint x="219.15999999999997" y="301.84400000000005" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="twR8jeRI6qD78y5mzVG5-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.032;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" edge="1" target="twR8jeRI6qD78y5mzVG5-87" source="twR8jeRI6qD78y5mzVG5-13">
+        <mxCell id="twR8jeRI6qD78y5mzVG5-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.002;entryY=0.032;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="twR8jeRI6qD78y5mzVG5-13" target="twR8jeRI6qD78y5mzVG5-87" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="870" y="210" />
@@ -517,8 +517,8 @@
             <mxPoint x="2019.98" y="90.0100000000001" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="4lmesSAVroaZM1Ykbocb-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Singleton&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingSystemManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ instance : ParkingSystemManager&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ parkingLots : List&amp;lt;ParkingLot&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ customers: List&amp;lt;Customer&amp;gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ services : Services&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getInstance() : ParkingSystemManager&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ registerParkingLot(lot : ParkingLot) : void&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getParkingLot(id : String) : ParkingLot&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ processEntry(v : Vehicle, lotId : int, gateId: String) : Ticket&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ processExit(plate : String&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;, lotId : int, gateId: String)&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&amp;nbsp;: boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ allocateSpot(&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;v : Vehicle, lotId : int&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;) : ParkingSpot&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ calculatePayment(t : Ticket) : int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ registerCustomer(customer : C&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ustomer&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getCustomer(customerId : int) : C&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ustomer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ isSubscriber(customerId : int) : boolean&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="1550" y="320" width="350" height="280" as="geometry" />
+        <mxCell id="4lmesSAVroaZM1Ykbocb-14" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;&amp;lt;&amp;lt;Singleton&amp;gt;&amp;gt;&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingSystemManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ instance : ParkingSystemManager&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ parkingLots : List&amp;lt;ParkingLot&amp;gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ customers: List&amp;lt;Customer&amp;gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ services : Services&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getInstance() : ParkingSystemManager&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ registerParkingLot(lot : ParkingLot) : void&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getParkingLot(id : String) : ParkingLot&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ processEntry(v : Vehicle, lotId : int, gateId: String) : Ticket&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ processExit(plate : String&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;, lotId : int, gateId: String)&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&amp;nbsp;: boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ allocateSpot(&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;v : Vehicle, lotId : int&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;) : ParkingSpot&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-wrap-mode: nowrap;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ calculatePayment(t : Ticket) : int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ registerCustomer(customer : C&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ustomer&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : void&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ getCustomer(customerId : int) : C&lt;/span&gt;&lt;span style=&quot;text-wrap-mode: nowrap; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ustomer&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;+ isSubscriber(customerId : int) : boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ scanAllParkingSpots() : ParkingScanReport&lt;span style=&quot;text-wrap-mode: nowrap;&quot;&gt;&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="320" width="350" height="290" as="geometry" />
         </mxCell>
         <mxCell id="4lmesSAVroaZM1Ykbocb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.993;entryY=0.098;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=1;exitY=0.305;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="4lmesSAVroaZM1Ykbocb-14" target="twR8jeRI6qD78y5mzVG5-2" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -531,7 +531,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="4lmesSAVroaZM1Ykbocb-16" value="*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="1890" y="385" width="60" height="30" as="geometry" />
+          <mxGeometry x="1800" y="47" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="4lmesSAVroaZM1Ykbocb-17" value="" style="endArrow=block;endFill=1;html=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=top;rounded=0;exitX=0.003;exitY=0.361;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="4lmesSAVroaZM1Ykbocb-14" target="IrNk-pjNn0Vu2aGkZhqs-22" edge="1">
           <mxGeometry x="-1" relative="1" as="geometry">
@@ -551,16 +551,16 @@
         <mxCell id="4lmesSAVroaZM1Ykbocb-20" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1685" y="650" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;&lt;/i&gt;&lt;i&gt;Interface&lt;/i&gt;&lt;i&gt;&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ParkingSpotIterator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ hasNext() : boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ next(): ParkingSpot&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;&lt;/i&gt;&lt;i&gt;Interface&lt;/i&gt;&lt;i&gt;&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;ParkingSpotIterator&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ hasNext() : boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ next(): ParkingSpot&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="944" y="-480" width="170" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SpotIterator&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ spots : List&amp;lt;ParkingSpot&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ idx : int&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ SpotIterator(spots : List)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ hasNext() : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ next() : ParkingSpot&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SpotIterator&amp;nbsp;&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ spots : List&amp;lt;ParkingSpot&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ idx : int&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ SpotIterator(spots : List)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ hasNext() : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ next() : ParkingSpot&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="954" y="-320" width="160" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingSpotCollection&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ spots : List&amp;lt;ParkingSpot&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addSpot(spot : ParkingSpot) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ iterator() : ParkingSpotIterator&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingSpotCollection&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ spots : List&amp;lt;ParkingSpot&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ addSpot(spot : ParkingSpot) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ iterator() : ParkingSpotIterator&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1262.5" y="-236.75" width="200" height="106.75" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endArrow=block;endFill=0;exitX=0.473;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-3" target="IrNk-pjNn0Vu2aGkZhqs-2">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endArrow=block;endFill=0;exitX=0.473;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-3" target="IrNk-pjNn0Vu2aGkZhqs-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1028" y="-320" />
@@ -571,7 +571,7 @@
             <mxPoint x="1029.48" y="-480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.001;exitY=0.141;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-4" target="IrNk-pjNn0Vu2aGkZhqs-2">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.001;exitY=0.141;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-4" target="IrNk-pjNn0Vu2aGkZhqs-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1153" y="-210" />
@@ -581,16 +581,16 @@
             <mxPoint x="1070" y="-190" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-12" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-12" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1460" y="-245" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-13" value="*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-13" value="*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1090" y="-460" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-15" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-15" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1216" y="-233.75" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=0.999;exitY=0.341;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-4" target="twR8jeRI6qD78y5mzVG5-28">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=0.999;exitY=0.341;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-4" target="twR8jeRI6qD78y5mzVG5-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1620" y="-200" />
@@ -601,16 +601,16 @@
             <mxPoint x="1960" y="-80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-17" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-17" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1455" y="-205.75" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-18" value="*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-18" value="*" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="2480" y="8" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-22" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Services&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style: solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;allocation:Allocation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ charging:Charging&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;towing:Towing&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;violation:Violation&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;security:Security&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;payment:PaymentProcessor&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ waitngList:W&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;aitngListService&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getAllocation()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getCharging()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getTowing()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getViolation()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSecurity()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPayment()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;W&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;aitngList()&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-22" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;Services&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style: solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;allocation:Allocation&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ charging:Charging&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;towing:Towing&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;violation:Violation&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;security:Security&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+&lt;/span&gt;&amp;nbsp;payment:PaymentProcessor&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ waitngList:W&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;aitngListService&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getAllocation()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getCharging()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getTowing()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getViolation()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSecurity()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPayment()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;W&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;aitngList()&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1625" y="680" width="200" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=0.999;exitY=0.406;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" target="twR8jeRI6qD78y5mzVG5-93">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=0.999;exitY=0.406;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" target="twR8jeRI6qD78y5mzVG5-93" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2000" y="781" />
@@ -619,26 +619,26 @@
             <mxPoint x="1970" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChargeFee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ type: ChargeFeeType&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ amount: int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getType(): ChargeFeeType&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getAmount(): int&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-25" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ChargeFee&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ type: ChargeFeeType&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ amount: int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getType(): ChargeFeeType&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ getAmount(): int&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="220" y="265" width="170" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;&lt;/i&gt;&lt;i&gt;Interface&lt;/i&gt;&lt;i&gt;&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;PaymentProcessor&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ pay(amount : int) : boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ cancel(transactionId : String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ status(&lt;/span&gt;transactionId : String&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : TicketStatus&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-26" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;&lt;/i&gt;&lt;i&gt;Interface&lt;/i&gt;&lt;i&gt;&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;PaymentProcessor&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ pay(amount : int) : boolean&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ cancel(transactionId : String&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;: boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ status(&lt;/span&gt;transactionId : String&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;) : TicketStatus&lt;/span&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1169.5" y="1010" width="251" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-27" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;PaymentAdapter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style: solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;api : PaymentAPI&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ PaymentAdapter(api:PaymentAPI)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ pay(amount:int) : boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cancel(transactionId:String) : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ status(transactionId:String) : TicketStatus&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-27" value="&lt;p style=&quot;margin: 4px 0px 0px; text-align: center;&quot;&gt;&lt;b&gt;PaymentAdapter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style: solid;&quot;&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+&amp;nbsp;api : PaymentAPI&amp;nbsp;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ PaymentAdapter(api:PaymentAPI)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ pay(amount:int) : boolean&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cancel(transactionId:String) : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ status(transactionId:String) : TicketStatus&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="1175" y="1240" width="240" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-28" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PaymentAPI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ makeCharge(value:double) : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ abortCharge(id:String) : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ checkStatus(id:String) : int&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-28" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PaymentAPI&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ makeCharge(value:double) : String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ abortCharge(id:String) : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ checkStatus(id:String) : int&lt;/p&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
           <mxGeometry x="867.5" y="1250" width="222.5" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-27" target="IrNk-pjNn0Vu2aGkZhqs-26">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=block;endFill=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-27" target="IrNk-pjNn0Vu2aGkZhqs-26" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
             <mxPoint x="1400" y="1200" as="sourcePoint" />
             <mxPoint x="1270" y="1220" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-27" target="IrNk-pjNn0Vu2aGkZhqs-28">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-27" target="IrNk-pjNn0Vu2aGkZhqs-28" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1100" y="1275" />
@@ -648,13 +648,13 @@
             <mxPoint x="940" y="1290" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-31" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-31" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1130" y="1250" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-32" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-32" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="1070" y="1247" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" target="twR8jeRI6qD78y5mzVG5-82">
+        <mxCell id="IrNk-pjNn0Vu2aGkZhqs-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=open;endFill=0;startArrow=diamondThin;startFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="IrNk-pjNn0Vu2aGkZhqs-22" target="twR8jeRI6qD78y5mzVG5-82" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="2190" y="805" />
@@ -664,6 +664,212 @@
             </Array>
             <mxPoint x="2040" y="899" as="sourcePoint" />
             <mxPoint x="2215" y="1178" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGWNRYOj4IPEZhuYBChL-1" value="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="1890" y="375" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="sGWNRYOj4IPEZhuYBChL-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;ParkingScanReport&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ totalSpots: int&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ freeSpots: int&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ takenSpots: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ notSuitableSpots: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ malfunctionSpots: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ reservedSpots: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ allocated Spots: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ consume(spot: ParkingSpot) : void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="1150" y="536" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="sGWNRYOj4IPEZhuYBChL-6" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.001;exitY=0.935;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.997;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="4lmesSAVroaZM1Ykbocb-14" target="sGWNRYOj4IPEZhuYBChL-4" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="1410" y="664.5699999999999" as="sourcePoint" />
+            <mxPoint x="1570" y="664.5699999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1470" y="591" />
+              <mxPoint x="1470" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="ActivitySpotIteratorScan" id="DWf5sh8o9g79qWlbdE0S">
+    <mxGraphModel dx="6400" dy="1463" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="WY6LW8d6_tKjt3T7Vl---0" />
+        <mxCell id="WY6LW8d6_tKjt3T7Vl---1" parent="WY6LW8d6_tKjt3T7Vl---0" />
+        <mxCell id="RH4JKOQ06YV3B5krayIF-0" value="ParkingSystemManager" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry x="-560" y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-1" value="" style="ellipse;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="125" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-8" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;strokeColor=#FF0000;endArrow=open;endFill=1;rounded=0" edge="1" parent="RH4JKOQ06YV3B5krayIF-0" source="RH4JKOQ06YV3B5krayIF-6">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="290" as="sourcePoint" />
+            <mxPoint x="60" y="135" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="30" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-53" value="scanAllParkingSpots()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="72.75" y="91" width="134.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-54" value="Create ParkingScanReport" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="84" y="150" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-55" value="For each ParkingLot" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="85" y="232" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.495;exitY=0.854;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-0" source="RH4JKOQ06YV3B5krayIF-1" target="RH4JKOQ06YV3B5krayIF-53">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="65" as="sourcePoint" />
+            <mxPoint x="140" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.493;exitY=0.886;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-0" target="RH4JKOQ06YV3B5krayIF-54">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="139.76" y="121" as="sourcePoint" />
+            <mxPoint x="139.76" y="164" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.493;exitY=0.886;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-0" target="RH4JKOQ06YV3B5krayIF-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="139.76" y="190" as="sourcePoint" />
+            <mxPoint x="140" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-26" value="If no more lots" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="30" y="489" width="114" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-29" value="Start" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-0">
+          <mxGeometry x="110" y="20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-9" value="ParkingLot" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry x="-280" y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-56" value="getFloors()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-9">
+          <mxGeometry x="84" y="247" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-57" value="For each Floor" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-9">
+          <mxGeometry x="101.25" y="320" width="77.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.493;exitY=0.886;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="139.68" y="287" as="sourcePoint" />
+            <mxPoint x="140" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-9" target="RH4JKOQ06YV3B5krayIF-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="178.75" y="354.78" as="sourcePoint" />
+            <mxPoint x="347.75" y="354.78" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-20" value="If no more floors" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-9">
+          <mxGeometry x="-7" y="330" width="114" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-28" value="Floor" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-58" value="&lt;span style=&quot;text-align: left;&quot;&gt;getSpotCollection()&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-28">
+          <mxGeometry x="84" y="335" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-28" source="RH4JKOQ06YV3B5krayIF-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="195" y="354.79999999999995" as="sourcePoint" />
+            <mxPoint x="364" y="354.79999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-35" value="ParkingSpotCollection" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry x="280" y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="SSeKtMTidozMXhhlmkCO-0" value="iterator()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-35">
+          <mxGeometry x="84" y="335" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-35" target="SSeKtMTidozMXhhlmkCO-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="196" y="354.75" as="sourcePoint" />
+            <mxPoint x="365" y="354.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-41" value="ParkingSpotIterator" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry x="560" y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="SSeKtMTidozMXhhlmkCO-1" value="hasNext()?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-41">
+          <mxGeometry x="101.25" y="321" width="77.5" height="66" as="geometry" />
+        </mxCell>
+        <mxCell id="SSeKtMTidozMXhhlmkCO-3" value="next()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-41">
+          <mxGeometry x="84" y="248" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-41" source="SSeKtMTidozMXhhlmkCO-1" target="SSeKtMTidozMXhhlmkCO-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="320" as="sourcePoint" />
+            <mxPoint x="170.31999999999996" y="333" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-11" value="true" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-41">
+          <mxGeometry x="130" y="291" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-41" target="9dDAE_VfNUp0cFr4C5DA-0">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="196" y="267.75" as="sourcePoint" />
+            <mxPoint x="381" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-17" value="false" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-41">
+          <mxGeometry x="93" y="387" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-47" value="ParkingScanReport" style="swimlane;whiteSpace=wrap" vertex="1" parent="WY6LW8d6_tKjt3T7Vl---1">
+          <mxGeometry x="840" y="1210" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="RH4JKOQ06YV3B5krayIF-51" value="" style="ellipse;shape=endState;fillColor=#000000;strokeColor=#ff0000" vertex="1" parent="RH4JKOQ06YV3B5krayIF-47">
+          <mxGeometry x="125" y="500" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-0" value="consume(spot)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-47">
+          <mxGeometry x="84" y="248" width="112" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-15" value="loop back" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-47">
+          <mxGeometry x="65" y="328" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="RH4JKOQ06YV3B5krayIF-47" source="RH4JKOQ06YV3B5krayIF-55">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1360" y="240" as="sourcePoint" />
+            <mxPoint x="125" y="514.7900000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-1360" y="267" />
+              <mxPoint x="-1360" y="515" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-28" value="Exit" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="RH4JKOQ06YV3B5krayIF-47">
+          <mxGeometry x="110" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WY6LW8d6_tKjt3T7Vl---1" source="RH4JKOQ06YV3B5krayIF-55" target="RH4JKOQ06YV3B5krayIF-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-260" y="1432" as="sourcePoint" />
+            <mxPoint x="-190" y="1477" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-14" value="" style="html=1;labelBackgroundColor=#ffffff;startArrow=none;startFill=0;startSize=6;endArrow=classic;endFill=1;endSize=6;jettySize=auto;orthogonalLoop=1;strokeWidth=1;dashed=1;fontSize=14;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="WY6LW8d6_tKjt3T7Vl---1" source="9dDAE_VfNUp0cFr4C5DA-0" target="SSeKtMTidozMXhhlmkCO-1">
+          <mxGeometry width="60" height="60" relative="1" as="geometry">
+            <mxPoint x="970" y="1468" as="sourcePoint" />
+            <mxPoint x="738.75" y="1392" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="980" y="1564" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-16" value="" style="html=1;labelBackgroundColor=#ffffff;startArrow=none;startFill=0;startSize=6;endArrow=classic;endFill=1;endSize=6;jettySize=auto;orthogonalLoop=1;strokeWidth=1;dashed=1;fontSize=14;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="WY6LW8d6_tKjt3T7Vl---1" source="SSeKtMTidozMXhhlmkCO-1" target="RH4JKOQ06YV3B5krayIF-57">
+          <mxGeometry width="60" height="60" relative="1" as="geometry">
+            <mxPoint x="-20.5" y="1705" as="sourcePoint" />
+            <mxPoint x="-260.5" y="1640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="700" y="1640" />
+              <mxPoint x="-140" y="1640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9dDAE_VfNUp0cFr4C5DA-19" value="" style="html=1;labelBackgroundColor=#ffffff;startArrow=none;startFill=0;startSize=6;endArrow=classic;endFill=1;endSize=6;jettySize=auto;orthogonalLoop=1;strokeWidth=1;dashed=1;fontSize=14;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WY6LW8d6_tKjt3T7Vl---1" source="RH4JKOQ06YV3B5krayIF-57" target="RH4JKOQ06YV3B5krayIF-55">
+          <mxGeometry width="60" height="60" relative="1" as="geometry">
+            <mxPoint x="-289" y="1520" as="sourcePoint" />
+            <mxPoint x="-530" y="1586" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-420" y="1565" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
