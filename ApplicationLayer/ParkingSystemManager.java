@@ -14,6 +14,7 @@ import parking.spots.ParkingSpot;
 import tickets.Ticket;
 import vehicles.Vehicle;
 
+
 /**
  * Singleton – ParkingSystemManager
  */
